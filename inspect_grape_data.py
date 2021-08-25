@@ -9,7 +9,7 @@ import skimage.draw
 from mrcnn.visualize import display_images
 from mrcnn import visualize
 
-path ="D:\DLCode\wgisd\data\CDY_2019"
+path =".\wgisd\data\CDY_2019"
 
 image_path=path+'.jpg'
 image = skimage.io.imread(image_path)

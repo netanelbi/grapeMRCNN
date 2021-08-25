@@ -42,7 +42,7 @@ import skimage.draw
 import imgaug  # https://github.com/aleju/imgaug (pip3 install imgaug)
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("../../")
+ROOT_DIR = os.path.abspath(".")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
