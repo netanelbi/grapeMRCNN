@@ -172,6 +172,7 @@ def train(model):
 
     # Training - Stage 1
     print("Training network heads")
+    model.keras_model.metrics_tensors=[]
     model.train(dataset_train, dataset_val,
                 learning_rate=config.LEARNING_RATE,
                 epochs=20,#40
