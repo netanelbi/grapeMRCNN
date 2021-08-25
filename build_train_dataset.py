@@ -21,10 +21,10 @@ def create_dataset(dataset_folder,data_folder,image_list):
 		shutil.copy2(mask_src_path, mask_dst_path)
 
 
-data_folder='D:/DLCode/wgisd/data/'
-train_masked_path ='D:/DLCode/wgisd/train_masked.txt'
+data_folder='./wgisd/data/'
+train_masked_path ='./wgisd/train_masked.txt'
 
-ROOT_DIR = os.path.abspath(".")
+ROOT_DIR = os.path.abspath("./grapeMRCNN/")
 print(ROOT_DIR)
 
 # load the names of the images
