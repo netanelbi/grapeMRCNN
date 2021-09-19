@@ -35,7 +35,7 @@ with open(test_files, 'r') as fp:
     data_list_test = fp.readlines()
 
 data_list = set([i[:-1] for i in data_list])
-
+data_list_test = set([i[:-1] for i in data_list_test])
 # split
 data_list=sorted(data_list)
 random.shuffle(data_list)
