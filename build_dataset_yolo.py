@@ -47,32 +47,32 @@ data_list_val = data_list[i:]
 #create dataset folder
 dataset_folder= os.path.sep.join([ROOT_DIR,"dataset"])
 if not os.path.exists(os.path.sep.join([dataset_folder,'images'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'images'])
+	os.makedirs(os.path.sep.join([dataset_folder,'images']))
 if not os.path.exists(os.path.sep.join([dataset_folder,'labels'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'labels'])
+	os.makedirs(os.path.sep.join([dataset_folder,'labels']))
 if not os.path.exists(dataset_folder):
 	os.makedirs(dataset_folder)
 
 #build train dataset
 
 if not os.path.exists(os.path.sep.join([dataset_folder,'images','train'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'images','train'])
+	os.makedirs(os.path.sep.join([dataset_folder,'images','train']))
 if not os.path.exists(os.path.sep.join([dataset_folder,'labels','train'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'labels','train'])
+	os.makedirs(os.path.sep.join([dataset_folder,'labels','train']))
 create_dataset(dataset_folder,'train',data_folder,data_list_train)
 
 # build Validation dataset
 if not os.path.exists(os.path.sep.join([dataset_folder,'images','val'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'images','val'])
+	os.makedirs(os.path.sep.join([dataset_folder,'images','val']))
 if not os.path.exists(os.path.sep.join([dataset_folder,'labels','val'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'labels','val'])
+	os.makedirs(os.path.sep.join([dataset_folder,'labels','val']))
 create_dataset(dataset_folder,'val',data_folder,data_list_val)
 
 # build test dataset
 if not os.path.exists(os.path.sep.join([dataset_folder,'images','test'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'images','test'])
+	os.makedirs(os.path.sep.join([dataset_folder,'images','test']))
 if not os.path.exists(os.path.sep.join([dataset_folder,'labels','test'])):
-	os.makedirs(os.path.sep.join([dataset_folder,'labels','test'])
+	os.makedirs(os.path.sep.join([dataset_folder,'labels','test']))
 create_dataset(dataset_folder,'test',data_folder,data_list_test)
 
 #for i in data_list:
